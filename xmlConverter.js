@@ -4,7 +4,7 @@ import FileSystem from "fs"
 
 
 function converter(fileName,newFileName){
-    FileSystem.readFile( `./${fileName}.xml`, function(err, data) {
+    FileSystem.readFile( fileName, function(err, data) {
         let json = parser.toJson(data);
         let values = (JSON.parse(json).Table_Facility.T_Facility);
         let mapped = values.map(data =>{ //returning array of formated objects with appropriate mapping
@@ -37,4 +37,4 @@ function converter(fileName,newFileName){
 }
 
 // Example:
-//converter("Facility","NewFacility")
+//converter("./Facility.xml","NewFacility")
