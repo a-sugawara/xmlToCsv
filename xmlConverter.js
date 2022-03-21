@@ -37,4 +37,4 @@ function converter(fileName,newFileName){
 }
 
 // Example:
-converter("Facility","NewFacility")
+//converter("Facility","NewFacility")
