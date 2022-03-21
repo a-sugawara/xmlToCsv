@@ -31,7 +31,7 @@ function converter(fileName,newFileName){
             "primary_contact_id"
         ]
         })
-        console.log(csv)
+        // console.log(csv)
         FileSystem.writeFileSync(`./${newFileName}.csv`,csv)
     });
 }
